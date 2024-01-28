@@ -1,4 +1,4 @@
-package controller;
+package br.com.fabiomorais.challengetodolist.controller;
 
 import java.util.List;
 
@@ -29,7 +29,7 @@ public class TodoController {
     }
 
     @GetMapping
-    List<Todo> list(Todo todo) {
+    List<Todo> list() {
         return todoService.list();
     }
 
@@ -45,3 +45,4 @@ public class TodoController {
 
     
 }
+

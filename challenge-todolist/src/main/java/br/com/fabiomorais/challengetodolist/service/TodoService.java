@@ -21,7 +21,7 @@ public class TodoService {
 
     public List<Todo> list() {
         Sort sort = Sort.by("priority").descending().and(Sort.by("name").ascending());
-        return todoRepository.findAll();
+        return todoRepository.findAll(sort);
     }
 
     public List<Todo> update(Todo todo) {
