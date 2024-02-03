@@ -34,7 +34,7 @@ class ChallengeTodolistApplicationTests {
 	}
 	@Test
 	void testeCreateTodoFailure() {
-		var todo = new Todo("todo teste 1", "descricao teste 1", false, 1);
+		var todo = new Todo("", "", false, 1);
 
 		webTestClient
 		.post()
